@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">EduVision</title><desc id="desc">Classroom video exploration. Python / PyTorch / MediaPipe.</desc>
+<rect width="1200" height="300" rx="18" fill="#0d1117"/>
+<path d="M850 300V90h120V0M920 300V145h150V0M1000 300V200h150V0" fill="none" stroke="#244f4b" stroke-width="2"/>
+<circle cx="970" cy="90" r="5" fill="#83d7c4"/><circle cx="1070" cy="145" r="5" fill="#83d7c4"/>
+<text x="60" y="53" fill="#83d7c4" font-family="Arial,sans-serif" font-size="14" letter-spacing="4">ABDULRHMAN ALAHMADI / SELECTED WORK</text>
+<text x="60" y="133" fill="#eff8f5" font-family="Arial,sans-serif" font-size="52" font-weight="700">EduVision</text>
+<text x="62" y="184" fill="#b3c6c5" font-family="Arial,sans-serif" font-size="25">Classroom video exploration</text>
+<path d="M62 224h60" stroke="#83d7c4" stroke-width="3"/>
+<text x="142" y="231" fill="#83d7c4" font-family="Arial,sans-serif" font-size="17">Python / PyTorch / MediaPipe</text></svg>
