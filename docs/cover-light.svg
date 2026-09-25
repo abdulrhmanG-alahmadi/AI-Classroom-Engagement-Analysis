@@ -1,9 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
 <title id="title">EduVision</title><desc id="desc">Classroom video exploration. Python / PyTorch / MediaPipe.</desc>
+<style>
+@keyframes drift {0%,100% {transform:translate(0,0)} 50% {transform:translate(-6px,3px) scale(1.04)}}
+@keyframes shimmer {0%,100% {opacity:.7} 50% {opacity:1}}
+.wave-motion {transform-origin:900px 200px;animation:drift 20s ease-in-out -10s infinite}
+.wave-edge {animation:shimmer 12s ease-in-out -10s infinite}
+@media (prefers-reduced-motion:reduce) {.wave-motion,.wave-edge {animation:none}}
+</style>
 <defs><linearGradient id="wave" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1469db" stop-opacity="0"/><stop offset="1" stop-color="#41baff" stop-opacity=".32"/></linearGradient></defs>
 <rect width="1200" height="280" rx="16" fill="#f4f9ff"/>
-<path d="M450 280 C690 150 760 320 950 160 S1100 80 1200 100 L1200 280Z" fill="url(#wave)"/>
-<path d="M460 279 C690 155 760 320 950 160 S1100 80 1200 100 M620 280 C820 145 940 255 1200 40 M700 280 C900 225 980 130 1200 165" fill="none" stroke="#0869bf" stroke-opacity=".45" stroke-width="1.5"/>
+<g class="wave-motion"><path class="wave-edge" d="M450 280 C690 150 760 320 950 160 S1100 80 1200 100 L1200 280Z" fill="url(#wave)"/>
+<path d="M460 279 C690 155 760 320 950 160 S1100 80 1200 100 M620 280 C820 145 940 255 1200 40 M700 280 C900 225 980 130 1200 165" fill="none" stroke="#0869bf" stroke-opacity=".45" stroke-width="1.5"/></g>
 <text x="48" y="45" fill="#0869bf" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">03 / SELECTED WORK</text>
 <text x="48" y="118" fill="#092758" font-family="Arial,sans-serif" font-size="48" font-weight="700">EduVision</text>
 <text x="50" y="163" fill="#466487" font-family="Arial,sans-serif" font-size="23">Classroom video exploration</text>
