@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
 <title id="title">EduVision</title><desc id="desc">Classroom video exploration. Python / PyTorch / MediaPipe.</desc>
 <style>
-@keyframes drift {0%,100% {transform:translate(0,0)} 50% {transform:translate(-6px,3px) scale(1.04)}}
-@keyframes shimmer {0%,100% {opacity:.7} 50% {opacity:1}}
-.wave-motion {transform-origin:900px 200px;animation:drift 20s ease-in-out -10s infinite}
-.wave-edge {animation:shimmer 12s ease-in-out -10s infinite}
+@keyframes drift {0%,100% {transform:translate(0,0)} 50% {transform:translate(-18px,9px) scale(1.12)}}
+@keyframes shimmer {0%,100% {opacity:.5} 50% {opacity:1}}
+.wave-motion {transform-origin:900px 200px;animation:drift 12s ease-in-out -10s infinite}
+.wave-edge {animation:shimmer 8s ease-in-out -10s infinite}
 @media (prefers-reduced-motion:reduce) {.wave-motion,.wave-edge {animation:none}}
 </style>
 <defs><linearGradient id="wave" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1469db" stop-opacity="0"/><stop offset="1" stop-color="#41baff" stop-opacity=".32"/></linearGradient></defs>
