@@ -1,4 +1,8 @@
-![EduVision — classroom video exploration](docs/cover.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/cover.svg">
+  <source media="(prefers-color-scheme: light)" srcset="docs/cover-light.svg">
+  <img alt="EduVision — Classroom video exploration" src="docs/cover.svg" width="1200">
+</picture>
 
 # EduVision
 
@@ -15,6 +19,8 @@
 **Current result.** The repository contains a Python pipeline, a Tkinter file picker, and a body-pose notebook. It is a research prototype, not a validated measure of attention, learning, or individual student performance. There is no bundled benchmark or sample classroom recording.
 
 ## Architecture
+
+![EduVision processing pipeline — architecture illustration](docs/pipeline.svg)
 
 ```mermaid
 flowchart TD
