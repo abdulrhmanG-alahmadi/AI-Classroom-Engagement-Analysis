@@ -3,21 +3,7 @@
 <desc id="description">An illustrated classroom frame becomes a person crop. Pose landmarks and a phone outline appear, then saved crops and a schematic plot. This is an explanation of the research workflow, not recorded model output. Reduced motion shows the completed illustration.</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;fill:#eae7de}.muted{fill:#89949d}.mono{font-family:monospace;letter-spacing:2px}.ink{stroke:#eae7de;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none}.blue{stroke:#67b8ff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none}
-@keyframes subject{0%,18%,100%{transform:translate(470px,166px) scale(.88)}28%,66%{transform:translate(330px,150px) scale(1.12)}74%,88%{transform:translate(290px,150px) scale(1.12)}96%{transform:translate(470px,166px) scale(.88)}}
-@keyframes room{0%,17%,97%,100%{opacity:.65}26%,89%{opacity:0}}
-@keyframes crop{0%,9%,94%,100%{opacity:0;stroke-dashoffset:560}18%,86%{opacity:1;stroke-dashoffset:0}}
-@keyframes pose{0%,36%,91%,100%{opacity:0}45%,86%{opacity:1}}
-@keyframes trace{0%,37%,100%{stroke-dashoffset:620}53%,90%{stroke-dashoffset:0}}
-@keyframes papers{0%,63%,100%{opacity:0;transform:translate(38px,14px)}73%,88%{opacity:1;transform:translate(0,0)}94%{opacity:0;transform:translate(0,8px)}}
-@keyframes plot{0%,70%,100%{stroke-dashoffset:230}83%,91%{stroke-dashoffset:0}}
-@keyframes cursor{0%,7%{opacity:0;transform:translate(590px,330px)}11%{opacity:1;transform:translate(530px,250px)}17%{opacity:1;transform:translate(485px,225px)}22%,100%{opacity:0;transform:translate(485px,225px)}}
-@keyframes caption1{0%,20%,96%,100%{opacity:1}24%,92%{opacity:0}}
-@keyframes caption2{0%,20%,44%,100%{opacity:0}25%,40%{opacity:1}}
-@keyframes caption3{0%,42%,68%,100%{opacity:0}47%,64%{opacity:1}}
-@keyframes caption4{0%,66%,95%,100%{opacity:0}72%,89%{opacity:1}}
-@keyframes progress{0%{transform:scaleX(0)}90%,100%{transform:scaleX(1)}}
-.subject{animation:subject 16s cubic-bezier(.65,0,.25,1) infinite}.room{animation:room 16s ease infinite}.crop{stroke-dasharray:560;animation:crop 16s ease infinite}.pose{animation:pose 16s ease infinite}.trace{stroke-dasharray:620;animation:trace 16s ease infinite}.papers{animation:papers 16s cubic-bezier(.2,.8,.2,1) infinite}.plot{stroke-dasharray:230;animation:plot 16s ease infinite}.cursor{animation:cursor 16s ease infinite}.c1{animation:caption1 16s ease infinite}.c2{animation:caption2 16s ease infinite}.c3{animation:caption3 16s ease infinite}.c4{animation:caption4 16s ease infinite}.progress{transform-origin:48px 446px;animation:progress 16s linear infinite}
-@media(prefers-reduced-motion:reduce){*{animation:none!important}.subject{transform:translate(290px,150px) scale(1.12)}.room,.cursor,.c1,.c2,.c3{opacity:0}.crop,.pose,.papers,.c4{opacity:1}.trace,.crop,.plot{stroke-dashoffset:0}.progress{transform:scaleX(1)}}
+.subject{transform:translate(290px,150px) scale(1.12)}.room,.cursor,.c1,.c2,.c3{opacity:0}.crop,.pose,.papers,.c4{opacity:1}.progress{transform:scaleX(1)}
 </style>
 <defs>
  <pattern id="grain" width="19" height="23" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".55" fill="#b9c7cf" opacity=".14"/><circle cx="14" cy="17" r=".4" fill="#b9c7cf" opacity=".09"/></pattern>

@@ -20,7 +20,14 @@
 
 ## Architecture
 
-![EduVision processing pipeline — architecture illustration](docs/pipeline.svg)
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="docs/pipeline-light-static.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/pipeline-static.svg">
+  <source media="(prefers-color-scheme: light)" srcset="docs/pipeline-light.svg">
+  <img src="docs/pipeline.svg" alt="EduVision illustrated workflow: a classroom frame becomes a person crop, pose landmarks, and saved outputs." width="960">
+</picture>
+
+Illustrated workflow; people, landmarks, and plots are schematic, not recorded model output.
 
 ```mermaid
 flowchart TD

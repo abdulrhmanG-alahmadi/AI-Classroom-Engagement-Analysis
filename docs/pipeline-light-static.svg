@@ -2,22 +2,8 @@
 <title id="title">EduVision — a frame, explained</title>
 <desc id="description">An illustrated classroom frame becomes a person crop. Pose landmarks and a phone outline appear, then saved crops and a schematic plot. This is an explanation of the research workflow, not recorded model output. Reduced motion shows the completed illustration.</desc>
 <style>
-text{font-family:Arial,Helvetica,sans-serif;fill:#eae7de}.muted{fill:#89949d}.mono{font-family:monospace;letter-spacing:2px}.ink{stroke:#eae7de;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none}.blue{stroke:#67b8ff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none}
-@keyframes subject{0%,18%,100%{transform:translate(470px,166px) scale(.88)}28%,66%{transform:translate(330px,150px) scale(1.12)}74%,88%{transform:translate(290px,150px) scale(1.12)}96%{transform:translate(470px,166px) scale(.88)}}
-@keyframes room{0%,17%,97%,100%{opacity:.65}26%,89%{opacity:0}}
-@keyframes crop{0%,9%,94%,100%{opacity:0;stroke-dashoffset:560}18%,86%{opacity:1;stroke-dashoffset:0}}
-@keyframes pose{0%,36%,91%,100%{opacity:0}45%,86%{opacity:1}}
-@keyframes trace{0%,37%,100%{stroke-dashoffset:620}53%,90%{stroke-dashoffset:0}}
-@keyframes papers{0%,63%,100%{opacity:0;transform:translate(38px,14px)}73%,88%{opacity:1;transform:translate(0,0)}94%{opacity:0;transform:translate(0,8px)}}
-@keyframes plot{0%,70%,100%{stroke-dashoffset:230}83%,91%{stroke-dashoffset:0}}
-@keyframes cursor{0%,7%{opacity:0;transform:translate(590px,330px)}11%{opacity:1;transform:translate(530px,250px)}17%{opacity:1;transform:translate(485px,225px)}22%,100%{opacity:0;transform:translate(485px,225px)}}
-@keyframes caption1{0%,20%,96%,100%{opacity:1}24%,92%{opacity:0}}
-@keyframes caption2{0%,20%,44%,100%{opacity:0}25%,40%{opacity:1}}
-@keyframes caption3{0%,42%,68%,100%{opacity:0}47%,64%{opacity:1}}
-@keyframes caption4{0%,66%,95%,100%{opacity:0}72%,89%{opacity:1}}
-@keyframes progress{0%{transform:scaleX(0)}90%,100%{transform:scaleX(1)}}
-.subject{animation:subject 16s cubic-bezier(.65,0,.25,1) infinite}.room{animation:room 16s ease infinite}.crop{stroke-dasharray:560;animation:crop 16s ease infinite}.pose{animation:pose 16s ease infinite}.trace{stroke-dasharray:620;animation:trace 16s ease infinite}.papers{animation:papers 16s cubic-bezier(.2,.8,.2,1) infinite}.plot{stroke-dasharray:230;animation:plot 16s ease infinite}.cursor{animation:cursor 16s ease infinite}.c1{animation:caption1 16s ease infinite}.c2{animation:caption2 16s ease infinite}.c3{animation:caption3 16s ease infinite}.c4{animation:caption4 16s ease infinite}.progress{transform-origin:48px 446px;animation:progress 16s linear infinite}
-@media(prefers-reduced-motion:reduce){*{animation:none!important}.subject{transform:translate(290px,150px) scale(1.12)}.room,.cursor,.c1,.c2,.c3{opacity:0}.crop,.pose,.papers,.c4{opacity:1}.trace,.crop,.plot{stroke-dashoffset:0}.progress{transform:scaleX(1)}}
+text{font-family:Arial,Helvetica,sans-serif;fill:#23333e}.muted{fill:#526575}.mono{font-family:monospace;letter-spacing:2px}.ink{stroke:#23333e;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none}.blue{stroke:#246eac;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.subject{transform:translate(290px,150px) scale(1.12)}.room,.cursor,.c1,.c2,.c3{opacity:0}.crop,.pose,.papers,.c4{opacity:1}.progress{transform:scaleX(1)}
 </style>
 <defs>
  <pattern id="grain" width="19" height="23" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".55" fill="#b9c7cf" opacity=".14"/><circle cx="14" cy="17" r=".4" fill="#b9c7cf" opacity=".09"/></pattern>
@@ -25,7 +11,7 @@ text{font-family:Arial,Helvetica,sans-serif;fill:#eae7de}.muted{fill:#89949d}.mo
   <path d="M-25 188L-28 122M-28 154H58L76 188M-40 107V153H58" class="ink" stroke="#596570"/>
   <path d="M-20 114Q4 108 35 121L65 148 88 150 90 161 57 163 24 143-17 146Z" fill="#b9b2a0"/>
   <path d="M-18 139L-14 185 5 185 10 142" fill="#b9b2a0"/>
-  <path d="M-14 184L-19 193H10L7 185M88 149L101 154 101 164 90 164" fill="#eae7de"/>
+  <path d="M-14 184L-19 193H10L7 185M88 149L101 154 101 164 90 164" fill="#23333e"/>
   <path d="M-21 53Q-6 42 16 50L39 96 30 128Q6 134-24 121L-30 77Z" fill="#42677d" stroke="#92a4ac" stroke-width="1.5"/>
   <path d="M-21 58L-42 88 -12 109 0 102 -25 86 -10 71" fill="#42677d" stroke="#92a4ac" stroke-width="1.5"/>
   <path d="M-12 109L6 110 13 103 2 99-2 103" fill="#ddc3a1"/>
@@ -39,9 +25,9 @@ text{font-family:Arial,Helvetica,sans-serif;fill:#eae7de}.muted{fill:#89949d}.mo
   <path d="M6 107L24 100 31 109 13 115Z" fill="#131b22" stroke="#8b9291" stroke-width="1.2"/>
  </g>
 </defs>
-<rect width="960" height="500" fill="#0c141c"/>
+<rect width="960" height="500" fill="#f4f1e8"/>
 <rect width="960" height="500" fill="url(#grain)"/>
-<path d="M48 37H78" stroke="#67b8ff" stroke-width="3"/>
+<path d="M48 37H78" stroke="#246eac" stroke-width="3"/>
 <text x="92" y="43" font-size="18" font-weight="700">EduVision</text>
 <text x="912" y="42" text-anchor="end" class="mono muted" font-size="12">WORKFLOW STUDY / 01</text>
 <g font-size="32" font-weight="500">
@@ -52,8 +38,8 @@ text{font-family:Arial,Helvetica,sans-serif;fill:#eae7de}.muted{fill:#89949d}.mo
 </g>
 <g class="room">
  <path d="M137 149H816V366H137ZM158 169H260V248H158ZM209 169V248M158 208H260M630 171H787V250H630M640 240L675 211 702 226 737 187" stroke="#53636b" stroke-width="1.4" fill="none"/>
- <g transform="translate(270 194)" opacity=".5"><ellipse cx="0" cy="12" rx="12" ry="15" fill="#9ca7a8"/><path d="M-13 31Q2 24 16 38L21 84H-20Z" fill="#6f808a"/><path d="M-13 42L-32 66 10 77M13 43L38 74 49 68M-12 85L-11 123M17 84L37 103 53 104" class="ink" stroke="#89949d"/><path d="M-42 86H62M-33 87V131M53 87V131" class="ink" stroke="#53636b"/></g>
- <g transform="translate(659 192)" opacity=".5"><ellipse cx="8" cy="13" rx="12" ry="15" fill="#9ca7a8" transform="rotate(14 8 13)"/><path d="M-7 32Q10 29 24 41L28 87H-12Z" fill="#777b78"/><path d="M-5 41L-22 72 13 75M21 45L35 65 15 76M-7 87L1 126M23 87L47 109 63 109" class="ink" stroke="#89949d"/><path d="M-33 88H71M-24 89V134M62 89V134M3 79L27 77" class="ink" stroke="#53636b"/></g>
+ <g transform="translate(270 194)" opacity=".5"><ellipse cx="0" cy="12" rx="12" ry="15" fill="#9ca7a8"/><path d="M-13 31Q2 24 16 38L21 84H-20Z" fill="#6f808a"/><path d="M-13 42L-32 66 10 77M13 43L38 74 49 68M-12 85L-11 123M17 84L37 103 53 104" class="ink" stroke="#526575"/><path d="M-42 86H62M-33 87V131M53 87V131" class="ink" stroke="#53636b"/></g>
+ <g transform="translate(659 192)" opacity=".5"><ellipse cx="8" cy="13" rx="12" ry="15" fill="#9ca7a8" transform="rotate(14 8 13)"/><path d="M-7 32Q10 29 24 41L28 87H-12Z" fill="#777b78"/><path d="M-5 41L-22 72 13 75M21 45L35 65 15 76M-7 87L1 126M23 87L47 109 63 109" class="ink" stroke="#526575"/><path d="M-33 88H71M-24 89V134M62 89V134M3 79L27 77" class="ink" stroke="#53636b"/></g>
  <path d="M147 371H814M166 378H792" stroke="#35434e" stroke-width="1"/>
 </g>
 <g class="subject">
@@ -61,13 +47,13 @@ text{font-family:Arial,Helvetica,sans-serif;fill:#eae7de}.muted{fill:#89949d}.mo
  <path class="crop blue" d="M-57 10V-19H-29M62-19H91V10M91 174V205H63M-29 205H-57V175"/>
  <g class="pose">
   <path class="trace blue" d="M5 22L1 58-20 64-34 88-5 105M1 58L19 65 45 89 73 34M1 58L2 125-7 177M2 125L55 151 82 155"/>
-  <g fill="#0c141c" stroke="#8bcfff" stroke-width="2">
+  <g fill="#f4f1e8" stroke="#246eac" stroke-width="2">
    <circle cx="5" cy="22" r="3.5"/><circle cx="1" cy="58" r="4"/><circle cx="-20" cy="64" r="3.5"/><circle cx="-34" cy="88" r="3.5"/><circle cx="-5" cy="105" r="3.5"/><circle cx="19" cy="65" r="3.5"/><circle cx="45" cy="89" r="3.5"/><circle cx="73" cy="34" r="3.5"/><circle cx="2" cy="125" r="4"/><circle cx="-7" cy="177" r="3.5"/><circle cx="55" cy="151" r="3.5"/><circle cx="82" cy="155" r="3.5"/>
   </g>
   <path d="M4 99H34V117H4Z" fill="none" stroke="#e8b66d" stroke-width="1.5"/>
  </g>
 </g>
-<g class="cursor"><path d="M0 0L3 24 10 17 17 27 23 23 16 14 27 12Z" fill="#eae7de" stroke="#0c141c" stroke-width="2"/></g>
+<g class="cursor"><path d="M0 0L3 24 10 17 17 27 23 23 16 14 27 12Z" fill="#23333e" stroke="#f4f1e8" stroke-width="2"/></g>
 <g class="papers">
  <path d="M430 255H491M485 250l7 5-7 5" class="blue" opacity=".65"/>
  <g transform="translate(530 148)">
@@ -79,7 +65,7 @@ text{font-family:Arial,Helvetica,sans-serif;fill:#eae7de}.muted{fill:#89949d}.mo
   <path d="M13 149H74M13 156H48" stroke="#667077" stroke-width="2"/>
  </g>
  <g transform="translate(718 199)">
-  <path d="M0 0H160V132H0Z" fill="#eae7de"/>
+  <path d="M0 0H160V132H0Z" fill="#23333e"/>
   <path d="M19 20H86" stroke="#738390" stroke-width="2"/>
   <path d="M23 39V107H142" stroke="#8d999f" fill="none"/>
   <path class="plot" d="M35 97V76M61 97V54M87 97V65M113 97V44M136 97V82" stroke="#386e9a" stroke-width="11" fill="none"/>
@@ -90,8 +76,8 @@ text{font-family:Arial,Helvetica,sans-serif;fill:#eae7de}.muted{fill:#89949d}.mo
 <g font-size="15" class="mono">
  <text x="48" y="415" class="c1 muted">01 / SAMPLE</text><text x="48" y="415" class="c2 muted">02 / ISOLATE</text><text x="48" y="415" class="c3 muted">03 / ESTIMATE</text><text x="48" y="415" class="c4 muted">04 / SAVE</text>
 </g>
-<path d="M48 446H912" stroke="#26343f"/>
-<path class="progress" d="M48 446H912" stroke="#67b8ff" stroke-width="2"/>
+<path d="M48 446H912" stroke="#c7d0d3"/>
+<path class="progress" d="M48 446H912" stroke="#246eac" stroke-width="2"/>
 <text x="48" y="475" font-size="13" class="muted">Illustrated workflow · Research prototype</text>
 <text x="912" y="475" text-anchor="end" font-size="13" class="muted">No measured results shown</text>
 </svg>
