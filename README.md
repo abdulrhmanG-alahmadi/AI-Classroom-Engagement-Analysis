@@ -27,7 +27,7 @@
   <img src="docs/pipeline.svg" alt="EduVision illustrated workflow: a classroom frame becomes a person crop, pose landmarks, and saved outputs." width="960">
 </picture>
 
-Illustrated workflow; people, landmarks, and plots are schematic, not recorded model output.
+AI-generated illustration with animated processing steps; landmarks and plots are schematic, not recorded model output.
 
 ```mermaid
 flowchart TD
