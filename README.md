@@ -1,18 +1,18 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/cover.svg">
   <source media="(prefers-color-scheme: light)" srcset="docs/cover-light.svg">
-  <img alt="EduVision — Classroom video exploration" src="docs/cover.svg" width="1200">
+  <img alt="EduVision — Classroom behavior analysis" src="docs/cover.svg" width="1200">
 </picture>
 
 # EduVision
 
-**A computer vision prototype for exploring visible activity in classroom recordings.**
+**A computer vision prototype for analyzing observable classroom behavior in recordings.**
 
 [Processing pipeline](#architecture) · [Run locally](#run-locally) · [Source](EduVision.py) · [Notebook](Body%20Pose%20Train%20and%20Data.ipynb)
 
 ## Project story
 
-**Problem.** Reviewing a long classroom recording manually makes it difficult to summarize visible patterns across frames.
+**Problem.** Reviewing classroom behavior across long recordings is time-consuming; the prototype summarizes head orientation, raised hands, and visible phones.
 
 **Approach.** Detect people with Faster R-CNN, crop their images, estimate head orientation and raised-hand gestures with MediaPipe, then detect phones and summarize the image counts with Matplotlib.
 
@@ -24,7 +24,7 @@
   <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="docs/pipeline-light-static.svg">
   <source media="(prefers-reduced-motion: reduce)" srcset="docs/pipeline-static.svg">
   <source media="(prefers-color-scheme: light)" srcset="docs/pipeline-light.svg">
-  <img src="docs/pipeline.svg" alt="EduVision illustrated workflow: a classroom frame becomes a person crop, pose landmarks, and saved outputs." width="960">
+  <img src="docs/pipeline.svg" alt="EduVision classroom behavior analysis: students facing the lesson, raising a hand, and looking at a phone; person crops, pose landmarks, and summaries." width="960">
 </picture>
 
 AI-generated illustration with animated processing steps; landmarks and plots are schematic, not recorded model output.
